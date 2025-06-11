@@ -1,0 +1,109 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5">
+    <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+            <img src="~/images/taweezy.jpg" alt="Your photo" class="img-fluid rounded-circle shadow-lg" style="max-height: 250px;" />
+        </div>
+        <div class="col-md-8">
+            <h1 class="display-4">LaOne Tawheeda Setlhoke</h1>
+            <p class="lead">Hey there! 😊 I’m a dedicated and detail-oriented software development graduate with a passion for web development, database management, and cybersecurity. Over the years, I’ve mastered various programming languages and developed solid skills in software quality assurance testing and information security. <br><br>
+
+                My journey has been full of exciting learning experiences. I completed Cisco NetAcad courses at Sci-Bono, where I first fell in love with web development. I also had the privilege of studying web development at Southern Labs Institute of Technology, sponsored by the British Columbia Institute of Technology, where I sharpened my skills in HTML5, CSS, and PHP. <br><br>
+
+                Recently, I finished my advanced studies in cybersecurity and visual communications at BCIT. 🎓 It was an amazing journey that expanded my knowledge in cutting-edge technologies, and I’m super excited to apply everything I’ve learned in real-world projects! 🚀 <br><br>
+
+                I thrive in fast-paced environments and love taking on challenges. Whether it’s managing diverse responsibilities or collaborating within teams, I’m always ready to create something extraordinary. Let’s build something awesome together! 💻✨
+          </p>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <h2 class="text-center">My Coding Skills</h2>
+    <canvas id="skillsChart" height="100"></canvas>
+</div>
+
+@section Scripts {
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('skillsChart').getContext('2d');
+    const skillsChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['HTML', 'CSS', 'JavaScript', 'C#', 'SQL', 'Python'],
+            datasets: [{
+                label: 'Proficiency (%)',
+                data: [90, 85, 75, 80, 70, 60],
+                backgroundColor: 'rgba(255, 99, 132, 0.6)'
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 100
+                }
+            }
+        }
+    });
+</script>
+}
+<div class="container mt-5">
+    <h2 class="text-center text-uppercase mb-4" style="color:#d63384;">Work Experience</h2>
+
+    <div class="work mb-4">
+        <h4>Personal Assistant</h4>
+        <h5>ITU Golf Wear | May 2023 – Present</h5>
+        <ul>
+            <li>Successfully streamlined executive schedules, optimizing time management, and ensuring all commitments are promptly met.</li>
+            <li>Facilitated seamless communication channels between golf club management and external stakeholders, enhancing organizational efficiency.</li>
+            <li>Spearheaded the organization of prestigious golf events and tournaments, contributing to heightened brand visibility and reputation.</li>
+            <li>Implemented systematic administrative processes, resulting in improved record-keeping and operational transparency.</li>
+        </ul>
+    </div>
+
+    <div class="work mb-4">
+        <h4>Client Liaison and Website Maintenance</h4>
+        <h5>ITU Golf Wear | February 2022 – April 2023</h5>
+        <ul>
+            <li>Ensured smooth communication between the golf club's management and external stakeholders, improving relationships and operational efficiency.</li>
+            <li>Coordinated prestigious golf events and tournaments, contributing to heightened brand visibility and reputation.</li>
+            <li>Maintained and updated the club’s website, ensuring timely and accurate information to enhance user experience.</li>
+            <li>Implemented streamlined administrative processes, improving record-keeping practices and supporting operational transparency.</li>
+        </ul>
+    </div>
+
+    <div class="work mb-4">
+        <h4>Other Work Experience</h4>
+        <p>For my other work experiences, kindly refer to my CV, available below:</p>
+        <a href="~/files/LaOneTawheedaSetlhokeResume2024.pdf" class="btn btn-outline-primary" download>
+            <i class="fa fa-download"></i> Download CV
+        </a>
+    </div>
+</div>
+
+<section id="contact" class="mt-5 container">
+    <h2 class="text-center text-uppercase mb-4" style="color:#d63384;">Contact Me</h2>
+    <p class="text-center">If you'd like to get in touch, feel free to reach out using the form below!</p>
+
+    <!-- Google Form Embed -->
+    <div class="d-flex justify-content-center mb-4">
+        <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLScq2Wyt7Xegq-gdYrsYOkAJO5scx8f0wGtxe_G90hVYBvbRvw/viewform?embedded=true" 
+            width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0"
+            style="max-width: 700px; border: 2px solid #f8d7da; border-radius: 10px;">
+            Loading…
+        </iframe>
+    </div>
+
+    <!-- Contact Details -->
+    <div class="contact-details text-center">
+        <h4 style="color:#b30059;">Contact Information</h4>
+        <p>Email: <a href="mailto:laone.setlhoke@gmail.com">laone.setlhoke@gmail.com</a></p>
+        <p>Location: Johannesburg, South Africa</p>
+    </div>
+</section>
+
