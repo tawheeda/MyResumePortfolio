@@ -52,4 +52,4 @@ jobs:
           app-name: 'tawheeda'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DD77619A4BD34E469A63606077A90DCF }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_69F2FC4A772A4D908D96B3262B259514 }}
